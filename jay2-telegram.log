@@ -1,0 +1,457 @@
+[2219388.014]  -> wl_display@1.get_registry(new id wl_registry@2)
+[2219388.240]  -> wl_display@1.sync(new id wl_callback@3)
+[2219388.317] wl_display@1.delete_id(3)
+[2219388.362] wl_registry@2.global(12, "zwlr_screencopy_manager_v1", 3)
+[2219388.383] wl_registry@2.global(21, "zwp_idle_inhibit_manager_v1", 1)
+[2219388.397] wl_registry@2.global(10, "zxdg_output_manager_v1", 3)
+[2219388.411]  -> wl_registry@2.bind(10, "zxdg_output_manager_v1", 3, new id [unknown]@4)
+[2219388.425]  -> wl_display@1.sync(new id wl_callback@5)
+[2219388.435] wl_registry@2.global(6, "zxdg_decoration_manager_v1", 1)
+[2219388.445] wl_registry@2.global(25, "zwp_linux_dmabuf_v1", 3)
+[2219388.454] wl_registry@2.global(4, "xdg_wm_base", 5)
+[2219388.472] wl_registry@2.global(24, "wl_drm", 2)
+[2219388.479] wl_display@1.delete_id(5)
+[2219388.487] wl_registry@2.global(17, "zwp_pointer_constraints_v1", 1)
+[2219388.513] wl_registry@2.global(15, "wp_viewporter", 1)
+[2219388.522] wl_registry@2.global(2, "wl_shm", 1)
+[2219388.538]  -> wl_registry@2.bind(2, "wl_shm", 1, new id [unknown]@6)
+[2219388.550] wl_registry@2.global(16, "wp_fractional_scale_manager_v1", 1)
+[2219388.559] wl_registry@2.global(7, "org_kde_kwin_server_decoration_manager", 1)
+[2219388.569] wl_registry@2.global(19, "wp_tearing_control_manager_v1", 1)
+[2219388.579] wl_registry@2.global(22, "wp_presentation", 1)
+[2219388.588] wl_registry@2.global(1, "wl_compositor", 4)
+[2219388.598]  -> wl_registry@2.bind(1, "wl_compositor", 4, new id [unknown]@7)
+[2219388.610] wl_registry@2.global(8, "zwp_primary_selection_device_manager_v1", 1)
+[2219388.631]  -> wl_registry@2.bind(8, "zwp_primary_selection_device_manager_v1", 1, new id [unknown]@8)
+[2219388.643] wl_registry@2.global(5, "wl_data_device_manager", 3)
+[2219388.653]  -> wl_registry@2.bind(5, "wl_data_device_manager", 3, new id [unknown]@9)
+[2219388.663] wl_registry@2.global(9, "zwlr_layer_shell_v1", 4)
+[2219388.672] wl_registry@2.global(3, "wl_subcompositor", 1)
+[2219388.679]  -> wl_registry@2.bind(3, "wl_subcompositor", 1, new id [unknown]@10)
+[2219388.685] wl_registry@2.global(13, "zwp_relative_pointer_manager_v1", 1)
+[2219388.691] wl_registry@2.global(26, "wl_output", 4)
+[2219388.700]  -> wl_registry@2.bind(26, "wl_output", 2, new id [unknown]@11)
+[2219388.709]  -> zxdg_output_manager_v1@4.get_xdg_output(new id zxdg_output_v1@12, wl_output@11)
+[2219388.716] wl_registry@2.global(23, "wl_seat", 8)
+[2219388.723]  -> wl_registry@2.bind(23, "wl_seat", 7, new id [unknown]@13)
+[2219388.733]  -> wl_data_device_manager@9.get_data_device(new id wl_data_device@14, wl_seat@13)
+[2219388.739]  -> zwp_primary_selection_device_manager_v1@8.get_device(new id zwp_primary_selection_device_v1@15, wl_seat@13)
+[2219388.746] wl_callback@3.done(0)
+[2219388.752] wl_callback@5.done(0)
+[2219388.761]  -> wl_display@1.sync(new id wl_callback@5)
+[2219388.798] wl_display@1.delete_id(5)
+[2219388.806] wl_shm@6.format(0)
+[2219388.813] wl_shm@6.format(1)
+[2219388.818] wl_shm@6.format(875708993)
+[2219388.823] wl_shm@6.format(875709016)
+[2219388.828] wl_output@11.geometry(0, 0, 700, 400, 0, "DEL", "DELL S3222DGM", 0)
+[2219388.836] wl_output@11.mode(1, 2560, 1440, 59951)
+[2219388.844] wl_output@11.scale(1)
+[2219388.849] wl_output@11.done()
+[2219388.855] zxdg_output_v1@12.logical_position(0, 0)
+[2219388.862] zxdg_output_v1@12.logical_size(2560, 1440)
+[2219388.868] zxdg_output_v1@12.name("DP-1")
+[2219388.873] wl_output@11.done()
+[2219388.898] wl_seat@13.capabilities(3)
+[2219388.910]  -> wl_seat@13.get_keyboard(new id wl_keyboard@3)
+[2219388.917]  -> wl_seat@13.get_pointer(new id wl_pointer@16)
+[2219388.923] wl_seat@13.name("default")
+[2219388.930] wl_callback@5.done(0)
+[2219448.917]  -> wl_display@1.get_registry(new id wl_registry@5)
+[2219448.945]  -> wl_display@1.sync(new id wl_callback@17)
+[2219448.956] wl_keyboard@3.keymap(1, fd 17, 10875)
+[2219449.129] wl_keyboard@3.repeat_info(25, 250)
+[2219449.188] wl_registry@5.global(12, "zwlr_screencopy_manager_v1", 3)
+[2219449.202] wl_registry@5.global(21, "zwp_idle_inhibit_manager_v1", 1)
+[2219449.210] wl_registry@5.global(10, "zxdg_output_manager_v1", 3)
+[2219449.187] wl_display@1.delete_id(17)
+[2219449.233] wl_registry@5.global(6, "zxdg_decoration_manager_v1", 1)
+[2219449.266] wl_registry@5.global(25, "zwp_linux_dmabuf_v1", 3)
+[2219449.277] wl_registry@5.global(4, "xdg_wm_base", 5)
+[2219449.286] wl_registry@5.global(24, "wl_drm", 2)
+[2219449.292] wl_registry@5.global(17, "zwp_pointer_constraints_v1", 1)
+[2219449.301] wl_registry@5.global(15, "wp_viewporter", 1)
+[2219449.309] wl_registry@5.global(2, "wl_shm", 1)
+[2219449.318] wl_registry@5.global(16, "wp_fractional_scale_manager_v1", 1)
+[2219449.325] wl_registry@5.global(7, "org_kde_kwin_server_decoration_manager", 1)
+[2219449.333] wl_registry@5.global(19, "wp_tearing_control_manager_v1", 1)
+[2219449.341] wl_registry@5.global(22, "wp_presentation", 1)
+[2219449.349] wl_registry@5.global(1, "wl_compositor", 4)
+[2219449.358] wl_registry@5.global(8, "zwp_primary_selection_device_manager_v1", 1)
+[2219449.366] wl_registry@5.global(5, "wl_data_device_manager", 3)
+[2219449.372] wl_registry@5.global(9, "zwlr_layer_shell_v1", 4)
+[2219449.380] wl_registry@5.global(3, "wl_subcompositor", 1)
+[2219449.388] wl_registry@5.global(13, "zwp_relative_pointer_manager_v1", 1)
+[2219449.396] wl_registry@5.global(26, "wl_output", 4)
+[2219449.404] wl_registry@5.global(23, "wl_seat", 8)
+[2219449.412] wl_callback@17.done(0)
+[2219449.435]  -> wl_compositor@7.create_surface(new id wl_surface@17)
+[2219451.627]  -> wl_display@1.get_registry(new id wl_registry@18)
+[2219451.645]  -> wl_display@1.sync(new id wl_callback@19)
+[2219451.677] wl_display@1.delete_id(19)
+[2219451.688] wl_registry@18.global(12, "zwlr_screencopy_manager_v1", 3)
+[2219451.695] wl_registry@18.global(21, "zwp_idle_inhibit_manager_v1", 1)
+[2219451.703] wl_registry@18.global(10, "zxdg_output_manager_v1", 3)
+[2219451.710] wl_registry@18.global(6, "zxdg_decoration_manager_v1", 1)
+[2219451.716] wl_registry@18.global(25, "zwp_linux_dmabuf_v1", 3)
+[2219451.724]  -> wl_registry@18.bind(25, "zwp_linux_dmabuf_v1", 3, new id [unknown]@20)
+[2219451.732] wl_registry@18.global(4, "xdg_wm_base", 5)
+[2219451.739] wl_registry@18.global(24, "wl_drm", 2)
+[2219451.747] wl_registry@18.global(17, "zwp_pointer_constraints_v1", 1)
+[2219451.753] wl_registry@18.global(15, "wp_viewporter", 1)
+[2219451.760] wl_registry@18.global(2, "wl_shm", 1)
+[2219451.768] wl_registry@18.global(16, "wp_fractional_scale_manager_v1", 1)
+[2219451.774] wl_registry@18.global(7, "org_kde_kwin_server_decoration_manager", 1)
+[2219451.780] wl_registry@18.global(19, "wp_tearing_control_manager_v1", 1)
+[2219451.789] wl_registry@18.global(22, "wp_presentation", 1)
+[2219451.796] wl_registry@18.global(1, "wl_compositor", 4)
+[2219451.803] wl_registry@18.global(8, "zwp_primary_selection_device_manager_v1", 1)
+[2219451.809] wl_registry@18.global(5, "wl_data_device_manager", 3)
+[2219451.815] wl_registry@18.global(9, "zwlr_layer_shell_v1", 4)
+[2219451.824] wl_registry@18.global(3, "wl_subcompositor", 1)
+[2219451.830] wl_registry@18.global(13, "zwp_relative_pointer_manager_v1", 1)
+[2219451.838] wl_registry@18.global(26, "wl_output", 4)
+[2219451.844] wl_registry@18.global(23, "wl_seat", 8)
+[2219451.851] wl_callback@19.done(0)
+[2219451.859]  -> wl_display@1.sync(new id wl_callback@19)
+[2219451.882] wl_display@1.delete_id(19)
+[2219451.895] zwp_linux_dmabuf_v1@20.format(875713112)
+[2219451.901] zwp_linux_dmabuf_v1@20.modifier(875713112, 16777215, 4294967295)
+[2219451.910] zwp_linux_dmabuf_v1@20.modifier(875713112, 0, 0)
+[2219451.917] zwp_linux_dmabuf_v1@20.modifier(875713112, 33554432, 4201219)
+[2219451.925] zwp_linux_dmabuf_v1@20.modifier(875713112, 33554432, 2305)
+[2219451.932] zwp_linux_dmabuf_v1@20.modifier(875713112, 33554432, 4200706)
+[2219451.940] zwp_linux_dmabuf_v1@20.modifier(875713112, 33554432, 5667587)
+[2219451.946] zwp_linux_dmabuf_v1@20.modifier(875713112, 33554432, 5683971)
+[2219451.954] zwp_linux_dmabuf_v1@20.modifier(875713112, 33554432, 5470979)
+[2219451.961] zwp_linux_dmabuf_v1@20.format(875713089)
+[2219451.967] zwp_linux_dmabuf_v1@20.modifier(875713089, 33554432, 5667587)
+[2219451.976] zwp_linux_dmabuf_v1@20.modifier(875713089, 33554432, 5470979)
+[2219451.988] zwp_linux_dmabuf_v1@20.modifier(875713089, 16777215, 4294967295)
+[2219451.996] zwp_linux_dmabuf_v1@20.modifier(875713089, 33554432, 5683971)
+[2219452.002] zwp_linux_dmabuf_v1@20.modifier(875713089, 33554432, 2305)
+[2219452.011] zwp_linux_dmabuf_v1@20.modifier(875713089, 0, 0)
+[2219452.018] zwp_linux_dmabuf_v1@20.modifier(875713089, 33554432, 4200706)
+[2219452.026] zwp_linux_dmabuf_v1@20.modifier(875713089, 33554432, 4201219)
+[2219452.033] zwp_linux_dmabuf_v1@20.format(875708993)
+[2219452.042] zwp_linux_dmabuf_v1@20.modifier(875708993, 33554432, 4200706)
+[2219452.049] zwp_linux_dmabuf_v1@20.modifier(875708993, 33554432, 2305)
+[2219452.058] zwp_linux_dmabuf_v1@20.modifier(875708993, 33554432, 5470979)
+[2219452.066] zwp_linux_dmabuf_v1@20.modifier(875708993, 33554432, 4201219)
+[2219452.075] zwp_linux_dmabuf_v1@20.modifier(875708993, 0, 0)
+[2219452.083] zwp_linux_dmabuf_v1@20.modifier(875708993, 16777215, 4294967295)
+[2219452.090] zwp_linux_dmabuf_v1@20.modifier(875708993, 33554432, 5683971)
+[2219452.097] zwp_linux_dmabuf_v1@20.modifier(875708993, 33554432, 5667587)
+[2219452.104] zwp_linux_dmabuf_v1@20.format(875709016)
+[2219452.111] zwp_linux_dmabuf_v1@20.modifier(875709016, 16777215, 4294967295)
+[2219452.118] zwp_linux_dmabuf_v1@20.modifier(875709016, 0, 0)
+[2219452.125] zwp_linux_dmabuf_v1@20.modifier(875709016, 33554432, 5683971)
+[2219452.131] zwp_linux_dmabuf_v1@20.modifier(875709016, 33554432, 5470979)
+[2219452.143] zwp_linux_dmabuf_v1@20.modifier(875709016, 33554432, 4200706)
+[2219452.150] zwp_linux_dmabuf_v1@20.modifier(875709016, 33554432, 2305)
+[2219452.157] zwp_linux_dmabuf_v1@20.modifier(875709016, 33554432, 5667587)
+[2219452.164] zwp_linux_dmabuf_v1@20.modifier(875709016, 33554432, 4201219)
+[2219452.171] zwp_linux_dmabuf_v1@20.format(842094158)
+[2219452.180] zwp_linux_dmabuf_v1@20.modifier(842094158, 33554432, 2561)
+[2219452.186] zwp_linux_dmabuf_v1@20.modifier(842094158, 33554432, 4201219)
+[2219452.195] zwp_linux_dmabuf_v1@20.modifier(842094158, 33554432, 4200706)
+[2219452.202] zwp_linux_dmabuf_v1@20.modifier(842094158, 0, 0)
+[2219452.213] zwp_linux_dmabuf_v1@20.modifier(842094158, 33554432, 2305)
+[2219452.221] zwp_linux_dmabuf_v1@20.modifier(842094158, 16777215, 4294967295)
+[2219452.228] wl_callback@19.done(0)
+[2219452.237]  -> wl_registry@18.bind(24, "wl_drm", 2, new id [unknown]@19)
+[2219452.246]  -> wl_display@1.sync(new id wl_callback@21)
+[2219452.267] wl_display@1.delete_id(21)
+[2219452.268] wl_drm@19.device("/dev/dri/renderD129")
+[2219452.321] wl_drm@19.capabilities(1)
+[2219452.332] wl_callback@21.done(0)
+QPainter::begin: Paint device returned engine == 0, type: 2
+QWidget::render: Cannot render with an inactive painter
+qt.core.qobject.connect: QObject::connect: No such signal QPlatformNativeInterface::systemTrayWindowChanged(QScreen*)
+[2219504.134]  -> wl_registry@2.bind(4, "xdg_wm_base", 2, new id [unknown]@21)
+[2219504.153]  -> wl_registry@2.bind(6, "zxdg_decoration_manager_v1", 1, new id [unknown]@22)
+[2219504.164]  -> xdg_wm_base@21.get_xdg_surface(new id xdg_surface@23, wl_surface@17)
+[2219504.175]  -> xdg_surface@23.get_toplevel(new id xdg_toplevel@24)
+[2219504.183]  -> xdg_toplevel@24.set_min_size(398, 522)
+[2219504.193]  -> xdg_toplevel@24.set_max_size(0, 0)
+[2219504.201]  -> xdg_toplevel@24.set_title("Telegram")
+[2219504.209]  -> xdg_toplevel@24.set_app_id("org.telegram.desktop")
+[2219504.217]  -> wl_surface@17.set_buffer_scale(1)
+[2219504.226]  -> wl_surface@17.set_buffer_transform(0)
+[2219504.235]  -> wl_surface@17.commit()
+[2219504.856]  -> wl_compositor@7.create_surface(new id wl_surface@25)
+[2219505.339]  -> wl_surface@25.destroy()
+[2219505.368]  -> wl_compositor@7.create_surface(new id wl_surface@26)
+[2219506.709]  -> wl_compositor@7.create_surface(new id wl_surface@27)
+[2219508.336]  -> wl_compositor@7.create_surface(new id wl_surface@28)
+[2219516.047]  -> wl_surface@28.destroy()
+[2219517.906] wl_display@1.delete_id(25)
+[2219517.926] wl_display@1.delete_id(28)
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+[2219551.326] xdg_toplevel@24.configure(0, 0, array[0])
+[2219551.368] xdg_surface@23.configure(0)
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+[2219552.210]  -> wl_display@1.get_registry(new id wl_registry@28)
+[2219552.486]  -> wl_display@1.sync(new id wl_callback@25)
+[2219552.574] wl_display@1.delete_id(25)
+[2219552.598] wl_registry@28.global(12, "zwlr_screencopy_manager_v1", 3)
+[2219552.634] wl_registry@28.global(21, "zwp_idle_inhibit_manager_v1", 1)
+[2219552.645] wl_registry@28.global(10, "zxdg_output_manager_v1", 3)
+[2219552.651] wl_registry@28.global(6, "zxdg_decoration_manager_v1", 1)
+[2219552.660] wl_registry@28.global(25, "zwp_linux_dmabuf_v1", 3)
+[2219552.667] wl_registry@28.global(4, "xdg_wm_base", 5)
+[2219552.675] wl_registry@28.global(24, "wl_drm", 2)
+[2219552.685] wl_registry@28.global(17, "zwp_pointer_constraints_v1", 1)
+[2219552.692] wl_registry@28.global(15, "wp_viewporter", 1)
+[2219552.701] wl_registry@28.global(2, "wl_shm", 1)
+[2219552.708] wl_registry@28.global(16, "wp_fractional_scale_manager_v1", 1)
+[2219552.718] wl_registry@28.global(7, "org_kde_kwin_server_decoration_manager", 1)
+[2219552.727] wl_registry@28.global(19, "wp_tearing_control_manager_v1", 1)
+[2219552.734] wl_registry@28.global(22, "wp_presentation", 1)
+[2219552.741] wl_registry@28.global(1, "wl_compositor", 4)
+[2219552.750] wl_registry@28.global(8, "zwp_primary_selection_device_manager_v1", 1)
+[2219552.758] wl_registry@28.global(5, "wl_data_device_manager", 3)
+[2219552.765] wl_registry@28.global(9, "zwlr_layer_shell_v1", 4)
+[2219552.773] wl_registry@28.global(3, "wl_subcompositor", 1)
+[2219552.782] wl_registry@28.global(13, "zwp_relative_pointer_manager_v1", 1)
+[2219552.790] wl_registry@28.global(26, "wl_output", 4)
+[2219552.799] wl_registry@28.global(23, "wl_seat", 8)
+[2219552.808] wl_callback@25.done(0)
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+[2220349.672]  -> xdg_toplevel@24.set_title("Telegram (1204)")
+[2220364.378]  -> xdg_toplevel@24.set_title("Telegram (13584)")
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+[2220467.829]  -> xdg_toplevel@24.set_title("Telegram (26591)")
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+qt.svg: Error while inflating gzip file: SVG format check failed
+[2220519.080]  -> xdg_toplevel@24.set_title("Telegram (27013)")
+qt.gui.imageio.jpeg: Corrupt JPEG data: premature end of data segment
+[2220687.501]  -> xdg_toplevel@24.set_title("Telegram (27378)")
+[2220826.320]  -> xdg_toplevel@24.set_title("Telegram (27380)")

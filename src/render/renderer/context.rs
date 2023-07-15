@@ -1,3 +1,5 @@
+use uapi::{fstat, c::dev_t};
+
 use {
     crate::{
         format::{Format, XRGB8888},
@@ -55,6 +57,7 @@ pub(super) struct TexProgs {
 pub struct RenderContext {
     pub(super) ctx: Rc<EglContext>,
     pub gbm: Rc<GbmDevice>,
+    pub dev: dev_t,
 
     pub(super) render_node: Rc<CString>,
 
@@ -138,9 +141,14 @@ impl RenderContext {
             include_str!("../shaders/fill.vert.glsl"),
             include_str!("../shaders/fill.frag.glsl"),
         )?;
+
+        // FIXME
+        let dev = fstat(***ctx.dpy.gbm.drm.fd()).unwrap().st_rdev;
+
         Ok(Self {
             ctx: ctx.clone(),
             gbm: ctx.dpy.gbm.clone(),
+            dev,
 
             render_node: node.clone(),
 
